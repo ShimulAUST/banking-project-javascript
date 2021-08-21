@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="container">
+        <div class="mx-auto mt-5" style="width: 50%;">
+            <h1>Welcome to <span class="text-primary">Bangladesh Bank!!!</span></h1>
+        </div>
+    </header>
+
+    <main class="container ">
+        <div class="row mt-4">
+            <div class="col-md-4 bg-warning p-5 rounded">
+                <h3>Deposit</h3>
+                <h4>$ <span id="show-deposit-amount">00</span></h4>
+            </div>
+            <div class="col-md-4 bg-danger p-5 rounded">
+                <h3>Withdraw</h3>
+                <h4>$ <span id="show-withdraw-amount">00</span></h4>
+            </div>
+            <div class="col-md-4 bg-success p-5 rounded">
+                <h3>Balance</h3>
+                <h4>$ <span id="total-balance-show">1200</span></h4>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-6 bg-warning p-5 rounded">
+                <h3>Deposit</h3>
+                <input type="text" placeholder="Enter the deposit amount" class="form-control" name=""
+                    id="deposit-amount-input">
+                <input type="button" class="btn btn-success mt-3" value="submit" id="deposit-amount-button">
+            </div>
+            <div class="col-md-6 bg-danger p-5 rounded">
+                <h3>Withdraw</h3>
+                <input type="text" placeholder="Enter the Withdraw amount" class="form-control" name=""
+                    id="withdraw-amount-input">
+                <input type="button" value="submit" class="btn btn-success mt-3" id="withdraw-amount-button">
+            </div>
+        </div>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="js/banking.js"></script>
+</body>
+
+</html>
